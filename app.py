@@ -217,5 +217,4 @@ if add_selectbox == "Machine Learning Part":
         pred = md(torch.Tensor(scaled_input))
     if st.button('Get Prediction'):
         st.write(f"Estimated Trip Price: ${round(float(pred),2)}")
-    else:
-        st.write('Goodbye')
+    st.markdown("""---""")
