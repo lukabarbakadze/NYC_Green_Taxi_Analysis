@@ -186,8 +186,8 @@ if add_selectbox == "Machine Learning Part":
         month = st.selectbox("Month", ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November"])
     
     v1, v2 = float(distance), float(app_time)
-    v3, v4 = df.loc[df.pickup_zone==pick_zone, "pickup_centroid_lat"].unique()[0], df.loc[df.pickup_zone==pick_zone, "pickup_centroid_long"].unique()[0]
-    v5, v6 = df.loc[df.drop_zone==drop_zone, "dropoff_centroid_lat"].unique()[0], df.loc[df.drop_zone==drop_zone, "dropoff_centroid_long"].unique()[0]
+    v3, v4 = df.loc[df.pickup_zone==pick_zone, "pickup_centroid_long"].unique()[0], df.loc[df.pickup_zone==pick_zone, "pickup_centroid_lat"].unique()[0]
+    v5, v6 = df.loc[df.drop_zone==drop_zone, "dropoff_centroid_long"].unique()[0], df.loc[df.drop_zone==drop_zone, "dropoff_centroid_lat"].unique()[0]
     # 6 varibale
     v7, v8 = 1 if airport_dummy=="Yes" else 0, 1 if weekend_dummy=="Yes" else 0
     # 8 varibale
