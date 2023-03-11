@@ -10,6 +10,7 @@ import torch
 from torch import nn
 from model import Model # load model class
 # hide hamburger
+st.set_page_config(page_title="Sales Dashboard", page_icon=":bar_chart:", layout="wide")
 hide_menu_style = """
         <style>
         #MainMenu {visibility: hidden;}
@@ -28,7 +29,6 @@ def load_data():
     return df, df_pickup_dropof_zones, md, scaler
 
 # -----------------------------------Set Config--------------------------------------
-st.set_page_config(page_title="Sales Dashboard", page_icon=":bar_chart:", layout="wide")
 # -----------------------------------Select Box--------------------------------------
 add_selectbox = st.sidebar.selectbox(
     "Please choose",
