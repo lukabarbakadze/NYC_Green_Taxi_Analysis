@@ -9,6 +9,13 @@ import numpy as np
 import torch
 from torch import nn
 from model import Model # load model class
+# hide hamburger
+hide_menu_style = """
+        <style>
+        #MainMenu {visibility: hidden;}
+        </style>
+        """
+st.markdown(hide_menu_style, unsafe_allow_html=True)
 
 # ----------------------------------Cache Resource-----------------------------------
 @st.cache_resource
